@@ -12,8 +12,6 @@ public partial class ReferenceTable
   public string? Description { get; set; }
 
   
-  //TODO: Hide from GraphQL
   public virtual ICollection<ReferenceTableColumn> Columns { get; set; }
-  [UseFiltering]
   public virtual ICollection<ReferenceTableRow> Rows { get; set; }
 }

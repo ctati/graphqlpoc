@@ -15,7 +15,11 @@ builder.Services
     .AddProjections()
     .AddFiltering()
     .AddSorting()
-    .AddQueryType<ReferenceTableQuery>();
+    .AddQueryType<ReferenceTableQuery>()
+    .AddType<ReferenceTableType>()
+    .AddType<ReferenceTableRowType>()
+    .AddType<ReferenceTableColumnType>()
+    .AddType<ReferenceTableColumnValueType>();
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
